@@ -1,5 +1,6 @@
 public class Ejecutar{
     public static void main(String[] args){
-        System.out.println("Hola mundo!! UNIAJC");
+        System.out.println("Hola mundo!! UNI");
+        
     }
 }
