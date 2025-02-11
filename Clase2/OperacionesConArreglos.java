@@ -24,4 +24,12 @@ public class OperacionesConArreglos {
         promedio = suma / a.length;
         return promedio;
     }
+
+    public int[] llenarArregloAleatorios(int tam) {
+        int[] a = new int[tam];
+        for (int i = 0; i < a.length; i++) {
+            a[i] = (int) (Math.random() * 100);
+        }
+        return a;
+    }
 }
