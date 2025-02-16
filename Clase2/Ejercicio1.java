@@ -26,11 +26,12 @@ public class Ejercicio1 {
         System.out.println(op.mostrarElementos(a));
         */
 
+        /*Ejercicio 2 */
+        System.out.println("Ingresar el numero de empleados: ");
+        int e = scanner.nextInt();
+        op.Ejercicio2(e);
         
-    }
 
-    @Override
-    public String toString() {
-        return "Ejercicio1 []";
+        
     }
 }
