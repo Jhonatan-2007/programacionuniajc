@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class OperacionesConArreglos {
@@ -56,7 +58,7 @@ public class OperacionesConArreglos {
         }
         System.out.println("\nPago neto por empleado: ");
         for(int i = 0; i < e; i++) {
-            System.out.printf("Empleado %d: %.2f\n", i+1, pagoNeto[i]);
+            System.out.println("Empleado " +(i + 1)+": " + String.format("%.2f", pagoNeto[i]));
         }
     }
 
@@ -107,11 +109,45 @@ public class OperacionesConArreglos {
 
         System.out.println("\nResumen de gastos:");
             for (int i = 0; i < c; i++) {
-                System.out.printf(descripciones[i] + totalGastos[i]);  
-                System.out.println("\nTotal general: "+ totalGeneral);
-
+                System.out.printf(descripciones[i] + totalGastos[i]);
             }
         }
+    }
+
+    public void Ejercicio6(int k){
+        double[] alquiler = new double[k];
+        double[] porcentajes = new double[k];
+        double[] ganancias = new double[k];
+
+        for(int i = 0; i < k; i++) {
+            System.out.println("\nvivienda " + (i+1));
+            System.out.println("Alquiler mensual: ");
+            alquiler[i] = scanner.nextDouble();
+            System.out.println("porcentaje de ganacia (%): ");
+            porcentajes[i] = scanner.nextDouble();
+            ganancias[i] = alquiler[i] *(porcentajes[i]/100);
+        }
+        System.out.println("\nGanacia por vivienda:");
+        for (int i = 0; i < k; i++) {
+            System.out.println("Vivienda " + (i + 1) + ": $" + String.format("%.2f", ganancias[i]));
+        }
+    }
+
+    public void Ejercicio7(int[] p) {
+        List<Integer> pares = new ArrayList<>();
+        List<Integer> impares = new ArrayList<>();
+
+        for (int num : p) {
+            if (num % 2 == 0) {
+                pares.add(num);
+            } else {
+                impares.add(num);
+            }
+        }
+    System.out.println("\nArreglo de números pares:");
+    System.out.println(pares);
+    System.out.println("Arreglo de números impares:");
+    System.out.println(impares);
     }
 }
 
