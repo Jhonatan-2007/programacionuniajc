@@ -26,10 +26,32 @@ public class Ejercicio1 {
         System.out.println(op.mostrarElementos(a));
         */
 
-        /*Ejercicio 2 */
+        /*Ejercicio 2 
         System.out.println("Ingresar el numero de empleados: ");
         int e = scanner.nextInt();
         op.Ejercicio2(e);
+        */
+
+        /*Ejercicio 3 
+        System.out.println("\n Suma de pares e impares");
+        System.out.println("\nDijitar tamaño del arreglo");
+        int s = scanner.nextInt();
+        op.Ejercicio3(s);
+        */
+
+        /*Ejercicio 4 
+        System.out.println("\n Edad mayor");
+        System.out.println("\nDijitar tamaño del arreglo");
+        int edad = scanner.nextInt();
+        op.Ejercicio4(edad);
+        */
+
+        /*Ejercicio 5*/
+        System.out.println("\n ");
+        int c = scanner.nextInt();
+        op.Ejercicio5(c);
+
+        
         
 
         
