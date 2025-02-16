@@ -47,7 +47,8 @@ public class Ejercicio1 {
         */
 
         /*Ejercicio 5*/
-        System.out.println("\n ");
+        System.out.println("\n Calculo de gastos ");
+        System.out.println("\nDijitar el tamaño del arreglo");
         int c = scanner.nextInt();
         op.Ejercicio5(c);
 

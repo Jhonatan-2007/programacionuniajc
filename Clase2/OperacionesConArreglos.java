@@ -89,9 +89,29 @@ public class OperacionesConArreglos {
         System.out.println("\nLa edad mayor en general es: " + "\n" + Math.max(mayor1, mayor2));
     }
 
-    public void Ejercicio5(int c)
-    
+    public void Ejercicio5(int c){
+        double[] PU = new double[c];
+        int[] CC = new int[c];
+        String[] descripciones = new String[c];
+        double[] totalGastos = new double[c];
 
+        for (int i = 0; i < c; i++) {
+            System.out.println("\nProducto " + (i+1));
+            System.out.print("Descripción: ");
+            descripciones[i] = scanner.nextLine();
+            System.out.print("Precio unitario: ");
+            PU[i] = scanner.nextDouble();
+            System.out.print("Cantidad comprada: ");
+            CC[i] = scanner.nextInt();
+            totalGastos[i] = PU[i] * CC[i];
 
+        System.out.println("\nResumen de gastos:");
+            for (int i = 0; i < c; i++) {
+                System.out.printf(descripciones[i] + totalGastos[i]);  
+                System.out.println("\nTotal general: "+ totalGeneral);
+
+            }
+        }
+    }
 }
 
