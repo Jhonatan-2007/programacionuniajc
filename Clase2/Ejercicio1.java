@@ -69,6 +69,18 @@ public class Ejercicio1 {
         }
         op.Ejercicio7(p);
         */
-        
+
+        /*Ejercicio 8 */
+        System.out.println("\n30 numeros");
+        System.out.println("Dijitar los 30 numeros");
+        int[] ys = op.llenarArregloAleatorios(30); 
+        System.out.println("Números generados:");
+        for(int num : ys) {
+            System.out.println(num + " ");
+        }
+        System.out.println("\n");
+        int[] y = new int[30];
+        op.Ejercicio8(y);
+
     }
 }

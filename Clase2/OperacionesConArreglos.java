@@ -106,12 +106,12 @@ public class OperacionesConArreglos {
             System.out.print("Cantidad comprada: ");
             CC[i] = scanner.nextInt();
             totalGastos[i] = PU[i] * CC[i];
+        }
 
         System.out.println("\nResumen de gastos:");
             for (int i = 0; i < c; i++) {
                 System.out.printf(descripciones[i] + totalGastos[i]);
-            }
-        }
+        }     
     }
 
     public void Ejercicio6(int k){
@@ -149,5 +149,33 @@ public class OperacionesConArreglos {
     System.out.println("Arreglo de números impares:");
     System.out.println(impares);
     }
+
+    public void Ejercicio8(int[] y) {
+        int mayor = y[0];
+        int menor = y[0];
+        int contarMayor = 1;
+        int contarMenor = 1;
+
+        for(int i = 1; i < y.length; i++) {
+            if(y[i] > mayor) {
+                mayor = y[i];
+                contarMayor = 1;
+            }else if (y[i] == mayor){
+                contarMayor++;
+            }
+            if(y[i] < menor) {
+                menor = y[i];
+                contarMenor = 1;
+            }else if (y[i] == menor){
+                contarMenor++;
+            }
+        }
+        System.out.println("\n Resultados: ");
+        System.out.println("Número mayor: " + mayor + " (se repite " + contarMayor + " veces)");
+        System.out.println("Número menor: " + menor + " (se repite " + contarMenor + " veces)");
+    
+    }
+
 }
+
 
