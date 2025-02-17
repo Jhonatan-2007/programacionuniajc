@@ -83,8 +83,8 @@ public class Ejercicio1 {
         op.Ejercicio8(y);
         */
 
-        /*Ejercicio 9 */
-        System.out.println("\nEjercicio 9 - Contar Repetidos");
+        /*Ejercicio 9 
+        System.out.println("\nContar Repetidos");
         System.out.print("Ingrese el tamaño del arreglo: ");
         int r = scanner.nextInt();
         System.out.println("Ingrese los números del arreglo:");
@@ -96,6 +96,20 @@ public class Ejercicio1 {
         System.out.print("Ingrese el número a buscar: ");
         int numBuscar = scanner.nextInt();
         op.ejercicio9(arreglo, numBuscar);
+        */
+
+        /*Ejercicio 10 */
+        System.out.println("\nSuma de opuestos");
+        System.out.print("Ingrese el tamaño del arreglo: ");
+        int tamArreglo = scanner.nextInt();
+        System.out.println("Ingrese los números del arreglo:");
+        int[] arregloA = new int[tamArreglo];
+        for(int i = 0; i < tamArreglo; i++) {
+            System.out.print("Número " + (i+1) + ": ");
+            arregloA[i] = scanner.nextInt();
+        }
+        op.ejercicio10(arregloA);
+
 
     }
 }

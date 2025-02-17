@@ -184,6 +184,24 @@ public class OperacionesConArreglos {
         System.out.println("\nEl número " + numBuscar + " aparece " + repetido + " veces en el arreglo");
     }
 
+    public void ejercicio10(int[] arregloA) {
+        int[] arregloB = new int[arregloA.length/2 + arregloA.length%2];
+        
+        for(int i = 0; i < arregloB.length; i++) {
+            if(i == arregloB.length-1 && arregloA.length%2 != 0) {
+                arregloB[i] = arregloA[i];
+            } else {
+                arregloB[i] = arregloA[i] + arregloA[arregloA.length-1-i];
+            }
+        }
+        System.out.println("\nArreglo original:");
+        System.out.println(mostrarElementos(arregloA));
+        System.out.println("Arreglo resultante (suma de opuestos):");
+        System.out.println(mostrarElementos(arregloB));
+    }
+
+    
+
 }
 
 
