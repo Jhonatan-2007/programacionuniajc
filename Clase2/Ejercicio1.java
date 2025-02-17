@@ -70,7 +70,7 @@ public class Ejercicio1 {
         op.Ejercicio7(p);
         */
 
-        /*Ejercicio 8 */
+        /*Ejercicio 8 
         System.out.println("\n30 numeros");
         System.out.println("Dijitar los 30 numeros");
         int[] ys = op.llenarArregloAleatorios(30); 
@@ -81,6 +81,21 @@ public class Ejercicio1 {
         System.out.println("\n");
         int[] y = new int[30];
         op.Ejercicio8(y);
+        */
+
+        /*Ejercicio 9 */
+        System.out.println("\nEjercicio 9 - Contar Repetidos");
+        System.out.print("Ingrese el tamaño del arreglo: ");
+        int r = scanner.nextInt();
+        System.out.println("Ingrese los números del arreglo:");
+        int[] arreglo = new int[r];
+        for(int i = 0; i < r; i++) {
+            System.out.print("Número " + (i+1) + ": ");
+            arreglo[i] = scanner.nextInt();
+        }
+        System.out.print("Ingrese el número a buscar: ");
+        int numBuscar = scanner.nextInt();
+        op.ejercicio9(arreglo, numBuscar);
 
     }
 }

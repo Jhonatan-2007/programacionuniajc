@@ -176,6 +176,14 @@ public class OperacionesConArreglos {
     
     }
 
+    public void ejercicio9(int[] arreglo, int numBuscar) {
+        int repetido = 0;
+        for(int num : arreglo) {
+            if(num == numBuscar) repetido++;
+        }
+        System.out.println("\nEl número " + numBuscar + " aparece " + repetido + " veces en el arreglo");
+    }
+
 }
 
 
