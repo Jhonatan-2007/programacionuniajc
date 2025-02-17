@@ -214,8 +214,101 @@ public class OperacionesConArreglos {
         System.out.println("Positivos:\n" + positivos);
     }
 
+    public void Ejercicio12(int[] arreglo, int valor) {
+        int[] posiciones = encontrarPosiciones(arreglo, valor);
+        System.out.println("\nPosiciones encontradas:");
+        System.out.println(mostrarElementos(posiciones));
+        }
+        public int[] encontrarPosiciones(int[] arreglo, int valor) {
+        int contador = 0;
+        for (int num : arreglo) {
+            if (num == valor) {
+                contador++;
+            }
+        }
+        int[] posiciones = new int[contador];
+        int index = 0;
+        for (int i = 0; i < arreglo.length; i++) {
+            if (arreglo[i] == valor) {
+                posiciones[index++] = i;
+            }
+        }
+        return posiciones;
+    }
 
+    public void Ejercicio13(double[] arreglo) {
+        double suma = 0;
+        for (double num : arreglo) {
+            suma += num;
+        }
+        double media = suma / arreglo.length;
+        System.out.println("\nMedia: " + media);
+        System.out.println("Mayores que la media:");
+        for (double num : arreglo) {
+            if (num > media) {
+                System.out.print(num + " ");
+            }
+        }
+        System.out.println("\nMenores que la media:");
+        for (double num : arreglo) {
+            if (num < media) {
+                System.out.print(num + " ");
+            }
+        }
+    }
 
+    public void Ejercicio14(int[] vector) {
+        int[] diferencias = diferenciaSucesiva(vector);
+        System.out.println("\nDiferencias sucesivas:");
+        System.out.println(mostrarElementos(diferencias));
+    }
+    int[] diferenciaSucesiva(int[] vector) {
+        int[] diferencias = new int[vector.length - 1];
+        for (int i = 0; i < vector.length - 1; i++) {
+            diferencias[i] = vector[i + 1] - vector[i];
+        }
+        return diferencias;
+    }
+
+    public void Ejercicio15(int ts) {
+        String[] nombres = new String[ts];
+        double[] sueldos = new double[ts];
+        for (int i = 0; i < ts; i++) {
+            System.out.print("Nombre del trabajador " + (i + 1) + ": ");
+            nombres[i] = scanner.nextLine();
+            System.out.print("Sueldo de " + nombres[i] + ": ");
+            sueldos[i] = scanner.nextDouble();
+            scanner.nextLine(); 
+        }
+        String[] resultado = encontrarSueldosPromedio(nombres, sueldos);
+        System.out.println("\nTrabajadores con sueldo promedio:");
+        for (String nombre : resultado) {
+            System.out.println(nombre);
+        }
+    }
+        String[] encontrarSueldosPromedio(String[] nombres, double[] sueldos) {
+        double suma = 0;
+        for (double sueldo : sueldos) {
+            suma += sueldo;
+        }
+        double promedio = suma / sueldos.length;
+        int count = 0;
+        for (double sueldo : sueldos) {
+            if (sueldo == promedio) {
+                count++;
+            }
+        }
+        String[] resultado = new String[count];
+        int index = 0;
+        for (int i = 0; i < sueldos.length; i++) {
+            if (sueldos[i] == promedio) {
+                resultado[index] = nombres[i];
+                index++;
+            }
+        }
+        return resultado;
+    }
+    
 }
 
 

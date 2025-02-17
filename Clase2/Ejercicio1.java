@@ -111,7 +111,7 @@ public class Ejercicio1 {
         op.ejercicio10(arregloA);
         */
 
-        /*Ejercicio 11*/
+        /*Ejercicio 11
         System.out.println("\nSeparar elementos");
         System.out.print("Ingrese el tamaño del arreglo: ");
         int se = scanner.nextInt();
@@ -122,5 +122,56 @@ public class Ejercicio1 {
             arreglo[i] = scanner.nextInt();
         }
         op.Ejercicio11(arreglo);
+        */
+
+        /*Ejercicio12 
+        System.out.println("\nEncontrar posiciones");
+        System.out.print("Ingrese el tamaño del arreglo: ");
+        int ep = scanner.nextInt();
+        int[] cadena = new int[ep]; 
+        System.out.println("Ingrese los números del arreglo:");
+        for (int i = 0; i < ep; i++) {
+            System.out.print("Número " + (i + 1) + ": ");
+            cadena[i] = scanner.nextInt();
+        }
+        System.out.print("Ingrese el valor a buscar: ");
+        int valorBuscar = scanner.nextInt();
+        op.Ejercicio12(cadena, valorBuscar);
+        */
+
+        /*Ejercicio13 
+        System.out.println("\n Separar por media");
+        System.out.print("Ingrese el tamaño del arreglo: ");
+        int n = scanner.nextInt();
+        double[] arreglo = new double[n];
+        System.out.println("Ingrese los números del arreglo:");
+        for (int i = 0; i < n; i++) {
+            System.out.print("Número " + (i + 1) + ": ");
+            arreglo[i] = scanner.nextDouble();
+        }
+        op.Ejercicio13(arreglo);
+        */
+
+        /*Ejercicio14 
+        System.out.println("\n Diferencias sucesivas");
+        System.out.print("Ingrese el tamaño del arreglo: ");
+        int ds = scanner.nextInt();
+        System.out.println("Ingrese los números del arreglo:");
+        int [] vector = new int[ds];
+        for(int i = 0; i < ds; i++) {
+            System.out.print("Número " + (i+1) + ": ");
+            vector[i] = scanner.nextInt();
+        }
+        op.Ejercicio14(vector);
+        */
+
+        /*Ejercicio 15 
+        System.out.println("\nTrabajadores con sueldo promedio");
+        System.out.print("Ingrese el número de trabajadores: ");
+        int ts = scanner.nextInt();
+        scanner.nextLine();
+        op.Ejercicio15(ts);
+        */
+        
     }
 }
