@@ -98,7 +98,7 @@ public class Ejercicio1 {
         op.ejercicio9(arreglo, numBuscar);
         */
 
-        /*Ejercicio 10 */
+        /*Ejercicio 10 
         System.out.println("\nSuma de opuestos");
         System.out.print("Ingrese el tamaño del arreglo: ");
         int tamArreglo = scanner.nextInt();
@@ -109,7 +109,18 @@ public class Ejercicio1 {
             arregloA[i] = scanner.nextInt();
         }
         op.ejercicio10(arregloA);
+        */
 
-
+        /*Ejercicio 11*/
+        System.out.println("\nSeparar elementos");
+        System.out.print("Ingrese el tamaño del arreglo: ");
+        int se = scanner.nextInt();
+        int[] arreglo = new int[se];
+        System.out.println("Ingrese los números del arreglo:");
+        for (int i = 0; i < se; i++) {
+            System.out.print("Número " + (i + 1) + ": ");
+            arreglo[i] = scanner.nextInt();
+        }
+        op.Ejercicio11(arreglo);
     }
 }
