@@ -172,6 +172,13 @@ public class Ejercicio1 {
         scanner.nextLine();
         op.Ejercicio15(ts);
         */
+
+        /*Ejercicio 16 */
+        System.out.println("\nAnálisis de profesores");
+        System.out.print("Ingrese el número de profesores: ");
+        int ap = scanner.nextInt();
+        scanner.nextLine();
+        op.Ejercicio16(ap);
         
     }
 }

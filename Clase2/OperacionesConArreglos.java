@@ -308,6 +308,60 @@ public class OperacionesConArreglos {
         }
         return resultado;
     }
+
+    public void Ejercicio16(int ap) {
+        String[] nombres = new String[ap];
+        int[] edades = new int[ap];
+        String[] sexos = new String[ap];
+        for (int i = 0; i < ap; i++) {
+            System.out.print("Nombre del profesor " + (i+1) + ": ");
+            nombres[i] = scanner.nextLine();
+            System.out.print("Edad de " + nombres[i] + ": ");
+            edades[i] = scanner.nextInt();
+            scanner.nextLine(); 
+            System.out.print("Sexo de " + nombres[i] + " (F/M): ");
+            sexos[i] = scanner.nextLine();
+        }
+        double sumaEdades = 0;
+        for (int edad : edades) {
+            sumaEdades += edad;
+        }
+        double edadPromedio = sumaEdades / ap;
+        int edadMinima = edades[0];
+        String profesorJoven = nombres[0];
+        for (int i = 1; i < ap; i++) {
+            if (edades[i] < edadMinima) {
+                edadMinima = edades[i];
+                profesorJoven = nombres[i];
+            }
+        }
+        int edadMaxima = edades[0];
+        String profesorMayor = nombres[0];
+        for (int i = 1; i < ap; i++) {
+            if (edades[i] > edadMaxima) {
+                edadMaxima = edades[i];
+                profesorMayor = nombres[i];
+            }
+        }
+        int profesorasMayorPromedio = 0;
+        for (int i = 0; i < ap; i++) {
+            if (sexos[i].equalsIgnoreCase("F") && edades[i] > edadPromedio) {
+                profesorasMayorPromedio++;
+            }
+        }
+        int profesoresMenorPromedio = 0;
+        for (int i = 0; i < ap; i++) {
+            if (sexos[i].equalsIgnoreCase("M") && edades[i] < edadPromedio) {
+                profesoresMenorPromedio++;
+            }
+        }
+        System.out.println("\nRESULTADOS DEL ANÁLISIS:");
+        System.out.printf("Edad promedio: %.1f años\n", edadPromedio);
+        System.out.println("Profesor más joven: " + profesorJoven + " (" + edadMinima + " años)");
+        System.out.println("Profesor con mayor edad: " + profesorMayor + " (" + edadMaxima + " años)");
+        System.out.println("Profesoras con edad mayor al promedio: " + profesorasMayorPromedio);
+        System.out.println("Profesores con edad menor al promedio: " + profesoresMenorPromedio);
+    }
     
 }
 
