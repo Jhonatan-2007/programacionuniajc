@@ -236,21 +236,21 @@ public class OperacionesConArreglos {
         return posiciones;
     }
 
-    public void Ejercicio13(double[] arreglo) {
+    public void Ejercicio13(double[] secuencia) {
         double suma = 0;
-        for (double num : arreglo) {
+        for (double num : secuencia) {
             suma += num;
         }
-        double media = suma / arreglo.length;
+        double media = suma / secuencia.length;
         System.out.println("\nMedia: " + media);
         System.out.println("Mayores que la media:");
-        for (double num : arreglo) {
+        for (double num : secuencia) {
             if (num > media) {
                 System.out.print(num + " ");
             }
         }
         System.out.println("\nMenores que la media:");
-        for (double num : arreglo) {
+        for (double num : secuencia) {
             if (num < media) {
                 System.out.print(num + " ");
             }

@@ -25,12 +25,14 @@ public class Ejercicio1 {
         int[] a = op.llenarArregloAleatorios(n);
         System.out.println(op.mostrarElementos(a));
         */
+        
 
         /*Ejercicio 2 
         System.out.println("Ingresar el numero de empleados: ");
         int e = scanner.nextInt();
         op.Ejercicio2(e);
         */
+        
 
         /*Ejercicio 3 
         System.out.println("\n Suma de pares e impares");
@@ -38,6 +40,7 @@ public class Ejercicio1 {
         int s = scanner.nextInt();
         op.Ejercicio3(s);
         */
+        
 
         /*Ejercicio 4 
         System.out.println("\n Edad mayor");
@@ -45,6 +48,7 @@ public class Ejercicio1 {
         int edad = scanner.nextInt();
         op.Ejercicio4(edad);
         */
+        
 
         /*Ejercicio 5
         System.out.println("\n Calculo de gastos ");
@@ -52,6 +56,7 @@ public class Ejercicio1 {
         int c = scanner.nextInt();
         op.Ejercicio5(c);
         */
+        
 
         /*Ejercicio 6 
         System.out.println("\n Calculo de ganancia de alquiler");
@@ -59,6 +64,7 @@ public class Ejercicio1 {
         int k = scanner.nextInt();
         op.Ejercicio6(k);
         */
+        
         
         /*Ejercicio 7
         System.out.println("Ingrese 10 números:");
@@ -69,6 +75,7 @@ public class Ejercicio1 {
         }
         op.Ejercicio7(p);
         */
+        
 
         /*Ejercicio 8 
         System.out.println("\n30 numeros");
@@ -97,7 +104,7 @@ public class Ejercicio1 {
         int numBuscar = scanner.nextInt();
         op.ejercicio9(arreglo, numBuscar);
         */
-
+        
         /*Ejercicio 10 
         System.out.println("\nSuma de opuestos");
         System.out.print("Ingrese el tamaño del arreglo: ");
@@ -115,13 +122,13 @@ public class Ejercicio1 {
         System.out.println("\nSeparar elementos");
         System.out.print("Ingrese el tamaño del arreglo: ");
         int se = scanner.nextInt();
-        int[] arreglo = new int[se];
+        int[] lista = new int[se];
         System.out.println("Ingrese los números del arreglo:");
         for (int i = 0; i < se; i++) {
             System.out.print("Número " + (i + 1) + ": ");
-            arreglo[i] = scanner.nextInt();
+            lista[i] = scanner.nextInt();
         }
-        op.Ejercicio11(arreglo);
+        op.Ejercicio11(lista);
         */
 
         /*Ejercicio12 
@@ -139,17 +146,17 @@ public class Ejercicio1 {
         op.Ejercicio12(cadena, valorBuscar);
         */
 
-        /*Ejercicio13 
+        /*Ejercicio13
         System.out.println("\n Separar por media");
         System.out.print("Ingrese el tamaño del arreglo: ");
-        int n = scanner.nextInt();
-        double[] arreglo = new double[n];
+        int sm = scanner.nextInt();
+        double[] secuencia = new double[sm];
         System.out.println("Ingrese los números del arreglo:");
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < sm; i++) {
             System.out.print("Número " + (i + 1) + ": ");
-            arreglo[i] = scanner.nextDouble();
+            secuencia[i] = scanner.nextDouble();
         }
-        op.Ejercicio13(arreglo);
+        op.Ejercicio13(secuencia);
         */
 
         /*Ejercicio14 
@@ -172,13 +179,15 @@ public class Ejercicio1 {
         scanner.nextLine();
         op.Ejercicio15(ts);
         */
+        
 
-        /*Ejercicio 16 */
+        /*Ejercicio 16 
         System.out.println("\nAnálisis de profesores");
         System.out.print("Ingrese el número de profesores: ");
         int ap = scanner.nextInt();
         scanner.nextLine();
-        op.Ejercicio16(ap);
-        
+        op.Ejercicio16(ap); 
+        */
     }
+    
 }
