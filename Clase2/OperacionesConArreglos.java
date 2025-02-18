@@ -2,6 +2,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import javax.print.DocFlavor.STRING;
+
 public class OperacionesConArreglos {
     private Scanner scanner = new Scanner(System.in);
     
@@ -270,6 +272,7 @@ public class OperacionesConArreglos {
         return diferencias;
     }
 
+    /* que yo hice
     public void Ejercicio15(int ts) {
         String[] nombres = new String[ts];
         double[] sueldos = new double[ts];
@@ -308,7 +311,29 @@ public class OperacionesConArreglos {
         }
         return resultado;
     }
+    */
+    
 
+   /*En clase  ejercicio 15
+   public String nombreSueldos(String[]n, int[]s){
+    int suma = 0;
+    for(int i = 0; i <s.length; i++){
+        suma +=s[i];
+    }
+    double promedio = suma/s.length;
+    String cad = ""; int contador = 0;
+    for(int i = 0; i < s.length; i++){
+        if(s[i] >= promedio){
+            cad += n[i] + " \n";
+            contador++;
+        }
+    }
+    return cad += "fueron "+ contador +" los empleados";
+   }
+   */
+   
+
+    /* 
     public void Ejercicio16(int ap) {
         String[] nombres = new String[ap];
         int[] edades = new int[ap];
@@ -362,6 +387,7 @@ public class OperacionesConArreglos {
         System.out.println("Profesoras con edad mayor al promedio: " + profesorasMayorPromedio);
         System.out.println("Profesores con edad menor al promedio: " + profesoresMenorPromedio);
     }
+    */
     
 }
 
