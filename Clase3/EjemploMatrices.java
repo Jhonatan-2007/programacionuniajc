@@ -32,7 +32,6 @@ public class EjemploMatrices {
         /*Ejercicio 18 */
         System.out.println("\n EJERCICIO 18");
         ma.generarTablaMultiplicar();
-
     }
     
 }

@@ -21,10 +21,7 @@ public class MetodoArreglos {
     public void sumarFilasColumnas(int[][] matriz) {
         int filas = matriz.length;
         int columnas = matriz[0].length;
-        
-        // Sumar filas
         System.out.println("\nMatriz y suma de filas:");
-        System.out.println("----------------------------------------------------");
         for (int i = 0; i < filas; i++) {
             int sumaFila = 0;
             for (int j = 0; j < columnas; j++) {
@@ -33,8 +30,6 @@ public class MetodoArreglos {
             }
             System.out.println(" | Suma = " + sumaFila);
         }
-        
-        // Sumar columnas
         System.out.println("\nSuma de columnas:");
         for (int j = 0; j < columnas; j++) {
             int sumaColumna = 0;
@@ -44,7 +39,6 @@ public class MetodoArreglos {
             System.out.printf("%4d", sumaColumna);
         }
         System.out.println();
-        System.out.println("----------------------------------------------------");
     }
 
     /*Ejercicio 18 */
@@ -57,16 +51,12 @@ public class MetodoArreglos {
                 tabla[i][j] = (i + 1) * (j + 1);
             }
         }
-        
-        // Imprimir tabla
         System.out.println("\nTabla de multiplicar del 1 al 10:");
-        System.out.println("----------------------------------------------------");
         System.out.print("   ");
         for (int i = 1; i <= 10; i++) {
             System.out.printf("%4d", i);
         }
-        System.out.println("\n   ----------------------------------------");
-        
+        System.out.println("\n ");
         for (int i = 0; i < 10; i++) {
             System.out.printf("%2d |", (i + 1));
             for (int j = 0; j < 10; j++) {
@@ -74,7 +64,6 @@ public class MetodoArreglos {
             }
             System.out.println();
         }
-        System.out.println("----------------------------------------------------");
     }
     
 }
