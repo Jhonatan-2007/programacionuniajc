@@ -65,5 +65,22 @@ public class MetodoArreglos {
             System.out.println();
         }
     }
+
+    /*Ejercicio 19 */
+    public void generarMatrizDiagonal(int n) {
+        int[][] matriz = new int[n][n];
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                matriz[i][j] = (i == j) ? 1 : 0;
+            }
+        }
+        System.out.println("\nMatriz con unos en la diagonal principal:");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                System.out.printf("%4d", matriz[i][j]);
+            }
+            System.out.println();
+        }
+    }
     
 }

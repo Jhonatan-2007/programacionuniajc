@@ -32,6 +32,12 @@ public class EjemploMatrices {
         /*Ejercicio 18 */
         System.out.println("\n EJERCICIO 18");
         ma.generarTablaMultiplicar();
+
+        /*Ejercicio 19 */
+        System.out.println("\n EJERCICIO 19");
+        int tamano = 5;
+        System.out.println("Tamaño de matriz diagonal: " + tamano + "x" + tamano);
+        ma.generarMatrizDiagonal(tamano);
     }
     
 }
