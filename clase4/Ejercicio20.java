@@ -1,34 +1,34 @@
 public class Ejercicio20 {
 
+    // Llenar la matriz con números enteros aleatorios
     public int[][] llenarMatriz(int n, int m) {
         int[][] matriz = new int[n][m];
-        for(int i = 0; i< matriz.lenght; i++) {
-            for (int = j; j < matriz.length; i++){
-            matriz[i][j] = (int) (Math.random()* 50 + 0) + 0;
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[0].length; j++) {
+                matriz[i][j] = (int) (Math.random() * 9 + 0) + 0;
             }
         }
         return matriz;
     }
 
-    public String diagonalCerosMatriz(int[][] m) {
-        int[][] matriz = new int[n][m];
-        for(int i = 0; i< matriz.lenght; i++) {
-            for (int = j; j < matriz.length; i++){
+    public int[][] diagonalCerosMatriz(int[][] m) {
+        for (int i = 0; i < m.length; i++) {
+            for (int j = 0; j < m[0].length; j++) {
                 if(j >= i){
                     m[i][j] = 0;
                 }
             }
         }
-        return matriz;
+        return m;
     }
 
     public String mostrarMatriz(int[][] m) {
-        int[][] matriz = new int[n][m];
-        for(int i = 0; i< matriz.lenght; i++) {
-            for (int = j; j < matriz.length; i++){
-                cad += m[i][j] + " ";
+        String cad = "";
+        for (int i = 0; i < m.length; i++) {
+            for (int j = 0; j < m[0].length; j++) {
+                cad += m[i][j] + " ";          
             }
-            cad += "\n"
+            cad += "\n";
         }
         return cad;
     }
