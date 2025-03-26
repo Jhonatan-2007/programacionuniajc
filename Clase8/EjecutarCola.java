@@ -41,7 +41,5 @@ public class EjecutarCola {
         //Tamaño de la cola
         System.out.println((numeros.size));
 
-        
-
     }
 }
