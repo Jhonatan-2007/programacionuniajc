@@ -14,17 +14,16 @@ public class Ejercicio1Colas {
 
     elementos2.add(1);
     elementos2.add(2);
-    elementos2.add(4);
+    elementos2.add(3);
 
     System.out.println(elementos1);
     System.out.println(elementos2);
 
-    if (elementos1.size() == elementos2.size()){
-        System.out.println("Correcto las Colas son identicas");
-    } else {
+    if (elementos1.size() == elementos2.size() && elementos1.toString().equals(elementos2.toString())) {
+        System.out.println("Cierto las Colas son identicas");
+        } else{
         System.out.println("Falso las colas son diferentes");
+        }
     }
-    } 
 }
-
 
