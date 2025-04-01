@@ -1,16 +1,34 @@
 public class Trabajador {
 
-        private String Cedula;
-        private String Nombre;
-        private double Salario;
+        private String cedula;
+        private String nombre;
+        private double salario;
     
         public Trabajador(String Cedula, String Nombre, double Salario){
-            this.Cedula = cedula;
-            this.Nombre = nombre;
-            this.Salario = salario;
+            this.cedula = cedula;
+            this.nombre = nombre;
+            this.salario = salario;
         }
 
-        public String pagar(){
-            return "";
+        public String getCedula(){
+            return cedula;
         }
+
+        public String getNombre(){
+            return nombre;
+        }
+
+        public double getSalario(){
+            return salario;
+        }
+
+        public String toString(){
+            return"Trabajador {Cedula: " + cedula +" Nombre: " + nombre + "Salario: " + salario + "}";
+        }
+
+        public double pagar(double incremento){
+            return salario + (salario * incremento); 
+        }
+
+        
 }
