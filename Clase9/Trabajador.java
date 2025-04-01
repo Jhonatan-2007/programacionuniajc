@@ -1,8 +1,8 @@
 public class Trabajador {
 
-        public String Cedula;
-        public String Nombre;
-        public double Salario;
+        private String Cedula;
+        private String Nombre;
+        private double Salario;
     
         public Trabajador(String Cedula, String Nombre, double Salario){
             this.Cedula = cedula;
