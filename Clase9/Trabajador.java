@@ -4,7 +4,7 @@ public class Trabajador {
         private String nombre;
         private double salario;
     
-        public Trabajador(String Cedula, String Nombre, double Salario){
+        public Trabajador(String cedula, String nombre, double salario){
             this.cedula = cedula;
             this.nombre = nombre;
             this.salario = salario;
@@ -30,5 +30,5 @@ public class Trabajador {
             return salario + (salario * incremento); 
         }
 
-        
+
 }
