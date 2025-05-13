@@ -56,7 +56,7 @@ class GrafoConPesos {
         }
         Collections.reverse(camino);
 
-        System.out.println("\n Mejor camino de " + inicio + " a " + fin + ": " + camino);
+        System.out.println("\nMejor camino de " + inicio + " a " + fin + ": " + camino);
         System.out.println("Distancia total: " + distancias.get(fin));
     }
 
@@ -69,7 +69,6 @@ class GrafoConPesos {
         grafo.agregarLugar("Estación Simón Bolívar");
         grafo.agregarLugar("Calle 5");
         grafo.agregarLugar("Avenida Roosevelt");
-        grafo.agregarLugar("imaginario");
 
         // Conectar lugares con distancias estimadas
         grafo.conectar("Uniajc Sur", "Estación Simón Bolívar", 5);
@@ -77,8 +76,6 @@ class GrafoConPesos {
         grafo.conectar("Calle 5", "Avenida Roosevelt", 4);
         grafo.conectar("Avenida Roosevelt", "Uniajc Norte", 6);
         grafo.conectar("Estación Simón Bolívar", "Uniajc Norte", 10); // camino alterno directo
-        grafo.conectar("Uniajc Sur", "imaginario" , 2);
-        grafo.conectar("imaginario", "Uniajc Norte" , 3);
 
         // Calcular el mejor camino
         grafo.dijkstra("Uniajc Sur", "Uniajc Norte");
