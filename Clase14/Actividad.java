@@ -68,14 +68,15 @@ class GrafoConPesos {
         grafo.agregarLugar("Uniajc Norte");
         grafo.agregarLugar("La Simón Bolívar");
         grafo.agregarLugar("Calle 5");
-        grafo.agregarLugar("Avenida Roosevelt");
+        grafo.agregarLugar("Sur Oriental");
 
         // Conectar lugares con distancias estimadas
         grafo.conectar("Uniajc Sur", "La Simón Bolívar", 5);
-        grafo.conectar("La Simón Bolívar", "Calle 5", 3);
-        grafo.conectar("Calle 5", "Avenida Roosevelt", 4);
-        grafo.conectar("Avenida Roosevelt", "Uniajc Norte", 6);
+        grafo.conectar("Uniajc Sur", "Calle 5", 6);
+        grafo.conectar("Uniajc Sur", "Sur Oriental", 4);
         grafo.conectar("La Simón Bolívar", "Uniajc Norte", 10); // camino alterno directo
+        grafo.conectar("Sur Oriental", "Uniajc Norte", 14);
+        grafo.conectar("Calle 5", "Uniajc Norte", 12);
 
         // Calcular el mejor camino
         grafo.dijkstra("Uniajc Sur", "Uniajc Norte");
