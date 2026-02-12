@@ -41,7 +41,7 @@ public class Restaurante {
         String tipoPla = sc.nextLine();
         Platillo platillo = new Platillo(cantPla, tipoPla);
 
-        double subtotal = (cantBeb * 2.0) + (cantPla * 10.0); // precios quemados
+        double subtotal = (cantBeb * 2.0) + (cantPla * 10.0); 
 
         
         System.out.print("\nPropina: $");
